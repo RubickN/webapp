@@ -14,10 +14,9 @@ spec:
     spec:
       containers:
         - args:
-          - -m
-          - http.server
-          - 8080
+          - "m"
+          - "http.server"
+          - "8080"
           image: ccr.ccs.tencentyun.com/westar_ops/web:latest
           name: webapp
-          command:
-            - python3
+          command: ["python3"]
