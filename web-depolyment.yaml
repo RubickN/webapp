@@ -17,7 +17,7 @@ spec:
           - -m
           - http.server
           - 8080
-        image: ccr.ccs.tencentyun.com/westar_ops/web:latest
-        name: webapp
-        command:
-          - python3
+          image: ccr.ccs.tencentyun.com/westar_ops/web:latest
+          name: webapp
+          command:
+            - python3
