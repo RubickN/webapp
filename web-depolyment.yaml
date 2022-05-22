@@ -20,5 +20,5 @@ spec:
           image: westar.tencentcloudcr.com/bns/web:latest
           name: webapp
           command: ["python3"]
-        imagePullSecrets:
-          - name: "image"
+      imagePullSecrets:
+        - name: "image"
