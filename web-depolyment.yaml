@@ -17,6 +17,6 @@ spec:
           - "m"
           - "http.server"
           - "8080"
-          image: ccr.ccs.tencentyun.com/westar_ops/web:latest
+          image: westar.tencentcloudcr.com/bns/web:latest
           name: webapp
           command: ["python3"]
