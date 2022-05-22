@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+spec:
+  replicas: 1
+  selector:
+    matchaLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+        - image: ccr.ccs.tencentyun.com/westar_ops/web:latest
+          name: webapp
+          ports:
+            - containerPort: 8080
+          command:
+            - python3
+          args:
+            - -m
+            - http.server
+            - 8080

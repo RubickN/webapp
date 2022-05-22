@@ -1,0 +1,1 @@
+FROM ccr.ccs.tencentyun.com/westar_ops/tcompose:2.0.0.77
